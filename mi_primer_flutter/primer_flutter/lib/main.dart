@@ -10,7 +10,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(title: const Text("My App"), backgroundColor: Colors.blue,),
         body: Center(
           child: Expanded(
             child: Column(
@@ -18,6 +20,7 @@ class MainApp extends StatelessWidget {
               children: [
                 Expanded(child: 
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(onPressed: (){}, child: const Text("Button 1")),
                   ],
@@ -26,6 +29,7 @@ class MainApp extends StatelessWidget {
 
                 Expanded(child: 
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(onPressed: (){}, child: const Text("Button 2")),
                   ],
@@ -34,6 +38,7 @@ class MainApp extends StatelessWidget {
 
                 Expanded(child: 
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(onPressed: (){}, child: const Text("Button 3")),
                   ],
@@ -42,6 +47,7 @@ class MainApp extends StatelessWidget {
 
                 Expanded(child: 
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(onPressed: (){}, child: const Text("Button 4")),
                   ],
